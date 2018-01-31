@@ -1,39 +1,48 @@
-Name:
+Name:isaac mogerman
 
 
-1.
+1.sorce code is a text file that contains a java program and a bytecode file is created by a java compiler that contains machiene language
 
-2.
+2.a class is a section of the program
 
-3.
+3.it tells the java virtual macheine to start running
 
-4.
+4.a string is a sequence of charicters between quotation marks
 
-5.
+5.yes, java is case sensitive
 
-6.
+6.an error in the code
 
-7.
+7.prints a given string
 
-8.
+8.useing //before a line
 
-9.
+9. useing /* to start the comment and */ to end it
 
-10.
+10.Hello Mercury!
+Hello Venus!
+Hello Earth!
+Hello Mars!
+Hello Jupiter!
+Hello Saturn!
+Hello Uranus!
+Hello Neptune!
+Hello Pluto!
 
-11.
 
-12.
+11.byte, short, int, long, float, double, char, boolean
 
-13.
+12.long
+
+13.double
 
 14.
-a.
-b.
+a.int
+b.double
 
-15.
+15.193450
 
-16.
+16.caricters
 
-17.
+17.false
 
