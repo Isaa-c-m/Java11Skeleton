@@ -3,69 +3,70 @@ Name:
 
 Chapter 8:
 
-1.
+1.byte short int long float double char boolean
 
-2.
+2.it recognises capital letters
 
-3.
+3.objects
 
-4.
+4.long
 
-5.
+5.double
 
-6.
+6.you whould make it 345l
 
-7.
+7.you whould make it 34.5f
 
-8.
+8.1450
 
-9.
+9.it can be a greater range of numbers
 
-10.
+10.they are controll charicters \n creates a new line and \t repersents a tabulation charicter
 
-11.
+11.char is for holding data and string is for defining it
 
-12.
+12.true
 
 Chapter 9:
 
 1.
-    1.1
+    1.1 long number = 123;
     
-    1.2
+    1.2 long firstName = "fname";
+	long lastName = "lname";
 
-2.
+2.int, double, true, import
 
-3.
+3.money = 123.45
 
 Chapter 10:
 
-1.
+1.2
 
-2.
+2.3
 
-3.
+3.((1+1)/2)
 
-4.
+4.if there is a decimal it will do floating point division
 
-5.
+5.1.75
 
-6.
+6.((1.5 + 3.5)/2.0)
 
-7.
+7.it is for finding the remainder of a divison
 
-8.
+8.2, -2, -2
 
-9.
+9.final
 
 Chapter 11:
 
-1.
+1.priamtive data and objects
 
-2.
+2.methods
 
-3.
+3.sub, length, toLowerCase, concat
 
-4.
+4.the second option uses less spacea and is clearer
 
-5.
+5. it whould remove 12 charicters and say "od walk spoiled"
