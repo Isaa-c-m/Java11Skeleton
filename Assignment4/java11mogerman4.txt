@@ -1,0 +1,79 @@
+1. Speed = 41.160000000000004 m/s 
+
+2. public class ticketCalculator {
+
+public static void main(String[] args ) {
+
+    double ticketPrice = 23.45;
+    int neededTickets = 7;
+    
+    System.out.println (ticketPrice*neededTickets);
+
+}
+
+}
+
+3. public class ticketCalculator {
+
+public static void main(String[] args ) {
+
+    double ticketPrice = 23.45;
+    int neededTickets = 7;
+    double taxTotal = 1.12;
+    double taxOnly = 0.12;
+    double totalTicketPrice = (ticketPrice*neededTickets);
+    
+    System.out.println ("without tax ="+totalTicketPrice);
+    System.out.println ("total tax ="+totalTicketPrice*taxOnly);
+    System.out.println ("final price ="+totalTicketPrice*taxTotal);
+}
+
+}
+
+4. public class BasicsDemo {
+
+public static void main(String[] args ) {
+
+int sum = 0;
+
+for ( int current = 1; current <= 1000; current++) {
+
+System.out.println ( "This is line "+current);
+
+System.out.println ( "Anything between the { and } will repeat 1000 times");
+
+}
+
+System.out.println ( "Finished counting");
+
+}
+
+}
+
+5. public class priceAdder {
+
+public static void main(String[] args ) {
+
+    double itemCost = 1.47;
+    
+    for (int current = 0; current <= 10; current++){
+        System.out.println (current+ " items = $"+current*itemCost);
+
+    }
+}
+
+}
+
+6. public class speedCalculator {
+
+public static void main(String[] args ) {
+
+    double speed = 9.8;
+    
+    for (int current = 0; current <= 10; current++){
+        System.out.println (current+"s"+ " speed = "+current*speed+"m/s");
+
+    }
+}
+
+}
