@@ -1,38 +1,80 @@
-Assignment 5
-Name:
+1. A. System.in		B. System.out		C. System.err
 
-1.
+2. println
 
-2.
+3. import java.util.Scanner;
 
-3.
+4. input
 
-4.
+5. 
+	1. Scanner scan = new Scanner( System.in );
 
-5.
-    5.1.
+	2. System.out.println("Enter the data:");
 
-    5.2.
+	3. inData = scan.nextLine();
 
-    5.3.
+6. you whould also have to change line 9 to "inData = dog.nextline()
 
-6.
+7. inData = scan.nextLine();
 
-7.
+8. import java.util.Scanner;
 
-8. This is in NameEcho.java
+class Echo
 
-9. This is in NameEchoAlt.java
+{
 
-10.
+public static void main (String[] args)
 
-11.
-    11.1.
+{
 
-    11.2.
+String name;
 
-    11.3.
+Scanner scan = new Scanner( System.in );
 
-12. This is in AddThree.java
+System.out.println("name:");
 
-13. 
+name = scan.nextLine();
+
+System.out.println("hello " + name );
+
+}
+
+}
+
+9. name:david
+   hello david
+
+10. nexInt
+
+11. 
+	1. 2116
+
+	2. -1794967296
+
+	3. replace int with long
+
+12. 	import java.util.Scanner;
+
+	public class AddThree {
+   	 	public static void main(String[] args) {
+        		Scanner scan = new Scanner(System.in);
+        		int first, second, third, sum;
+        
+        		System.out.println("Enter first integer:");
+	        	first = scan.nextInt();
+
+	        	System.out.println("Enter second integer:");
+        		second = scan.nextInt();  
+        
+        		System.out.println("Enter third integer:");
+        		third = scan.nextInt();
+
+	        	sum = first + second;
+
+	        	System.out.println("The sum of " + first + " plus " + second + " plus "+ third + " is " + sum);
+    }
+}
+
+13. 	17 / 12 is 1
+	17 % 12 is 5
+	1 * 12 + 5 is 17
