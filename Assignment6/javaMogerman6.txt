@@ -1,0 +1,129 @@
+1. import java.util.Scanner;
+class EchoSquare {
+
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+        long Width, Area, Height;
+
+        System.out.println("Enter the width:");
+        Width = scan.nextInt();
+        
+        System.out.println("Enter the height:");
+        Height = scan.nextInt();
+
+        Area = Width * Height;
+
+        System.out.println ("area is "+ Area +" square meters");
+    }
+}
+
+2. import java.util.Scanner;
+class EchoSquare {
+
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+        long Width, Area, Height;
+        double Cost, totalCost;
+        
+        System.out.println("Enter the width:");
+        Width = scan.nextInt();
+        
+        System.out.println("Enter the height:");
+        Height = scan.nextInt();
+
+        System.out.println("Enter the cost:");
+        Cost = scan.nextDouble();
+        
+        Area = Width * Height;
+        totalCost = Area * Cost;
+        
+        System.out.println ("area is "+ Area +" square meters");
+        System.out.format("The cost to paint the wall is: $%.2f%n",totalCost);
+    }
+}
+
+3. import java.util.Scanner;
+class EchoSquare {
+
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+        long age, months, days, hours;
+
+        System.out.println("Enter your age in years only:");
+        age = scan.nextInt();
+
+        months = age * 12;
+        days = age * 365;
+        hours = age * 365 * 24;
+
+        System.out.println ("your age in months is " + months);
+        System.out.println ("your age in days is: " + days);
+        System.out.println ("your age in hours is: " + hours);
+    }
+}
+
+4. import java.util.Scanner;
+class EchoSquare {
+
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+        
+        double price, totalCost;
+        int howMany;
+        
+        System.out.println ("how mutch does a ticket cost?: ");
+        price = scan.nextDouble();
+        
+        System.out.println ("how many tickets?: ");
+        howMany = scan.nextInt();
+        
+        totalCost = price * howMany;
+        
+        System.out.println("the total cost is: " + totalCost);
+    }
+}
+
+5. import java.util.Scanner;
+class EchoSquare {
+
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+        
+        int howMany, dozens, singles;
+        
+        System.out.println("how many eggs?: ");
+        howMany = scan.nextInt();
+        
+        dozens = howMany / 12;
+        singles = howMany % 12;
+        
+        System.out.println("you need " + dozens + " dozens and " + singles + " singles");
+    }
+}
+
+6. import java.util.Scanner;
+class EchoSquare {
+
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+        
+        String name, animal, feature;
+        
+        System.out.println("enter a name: ");
+        name = scan.nextLine();
+        
+        System.out.println("enter an animal: ");
+        animal = scan.nextLine();
+
+        System.out.println("enter a feature: ");
+        feature = scan.nextLine();
+        
+        System.out.format("%s has a %s like a %s%n",name,feature,animal);
+    }
+}
