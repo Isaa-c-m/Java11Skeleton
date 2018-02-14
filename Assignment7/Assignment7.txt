@@ -4,28 +4,28 @@ Name:
 Chapter 13
 ==========
 
-1.
+1.nothing
 
-2.
+2. you get an error for both
 
-3.
+3. 730 and 0.023
 
-4.
+4. 12
 
-5.
+5. it makes a method belong to a class insted of an object of a class
 
-6.
+6.NaN
 
-7.
+7. sqrt can not recognise negitave numbers so it reterns "NaN" (Not a Number
 
-8.
+8. becuse you need to specify that the number is a double
 
 
 Chapter 16
 ==========
 
-1.
+1. {}
 
-2.
+2. == asks if the variables are equal != askes if they are not equal
 
-3.
+3.an if statement within another if statement
