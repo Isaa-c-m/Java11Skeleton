@@ -29,3 +29,167 @@ Chapter 16
 2. == asks if the variables are equal != askes if they are not equal
 
 3.an if statement within another if statement
+
+
+Chapter 11 
+==========
+Problems
+
+1. import java.util.Scanner;
+class AnnualApplianceCost {
+    public static void main(String[] args){
+        
+        double khCost, khUsed, cost;
+        
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter the cost per killowatt-hour in cents");
+        khCost = scan.nextDouble();
+        System.out.println("Enter killowatt-hours used per year");
+        khUsed = scan.nextDouble();
+        
+        cost = khCost * khUsed;
+        
+        System.out.println("the cost is " + cost);
+    }
+}
+
+2. import java.util.Scanner;
+class NumberTester {
+    public static void main(String[] args) {
+    Scanner scan = new Scanner(System.in);
+    double distance, time, Gs;
+    
+    System.out.println("enter the time");
+    time = scan.nextDouble();
+    Gs = 32.174;
+    
+    distance = (.5 * Gs * (time * time));
+    System.out.println("distance = " + distance);
+    }
+}
+
+Chapter 12
+==========
+problems
+
+1. import java.util.Scanner;
+class DiscountPrices {
+    public static void main(String[] args) {
+    Scanner scan = new Scanner(System.in);
+    
+    double price, disPrice;
+    
+    System.out.println("enter amount");
+    price = scan.nextDouble();
+    
+    if (price >= 10){
+        price = (price * 0.9);
+        System.out.println("discounted price " + price);
+    } else {
+        System.out.println("no discount for you");
+    }
+}
+}
+
+2. import java.util.Scanner;
+class OrderChecker {
+    public static void main(String[] args) {
+    Scanner scan = new Scanner(System.in);
+    final int boltPrice = 5, nutPrice = 3, washerPrice = 1;
+    int bolts, nuts, washers;
+    double totalCost;
+    
+    System.out.println("Number of bolts: ");
+        bolts = scan.nextInt();
+    System.out.println("Number of nuts: ");
+        nuts = scan.nextInt();
+    System.out.println("Number of washers: ");
+        washers = scan.nextInt();
+    
+    totalCost = (bolts * boltPrice) + (nuts * nutPrice) + (washers * washerPrice);
+        
+    if (bolts <= nuts) {
+        if (washers >= bolts *2) {
+            System.out.println("Total cost: " + totalCost);
+        } else {
+            System.out.println("Check the Order: to few washers");
+        }
+    } else {
+        System.out.println("Check the Order: too few nuts");
+    }
+}
+}
+
+3. import java.util.Scanner;
+class LastChanceGas {
+    public static void main(String[] args) {
+    Scanner scan = new Scanner(System.in);
+    
+    int tank, gage, MPG;
+    
+    System.out.println("Tank capacity:");
+        tank = scan.nextInt();
+    System.out.println("Gage reading:");
+        gage = scan.nextInt();
+    System.out.println("Miles per gallon:");
+        MPG = scan.nextInt();
+        
+    if ((tank / (100 /gage)) * MPG >= 200) {
+        System.out.println("Safe to Proceed");
+    } else {
+        System.out.println("Get Gas!");
+    }
+}
+}
+
+5. import java.util.Scanner;
+class PieEatingContest {
+    public static void main(String[] args) {
+    Scanner scan = new Scanner(System.in);
+    
+    double weight;
+    
+    System.out.println("Enter the weight");
+        weight = scan.nextDouble();
+    
+    if (weight >= 220) {
+        if (weight <= 280) {
+            System.out.println("the contestant can participate");
+        } else {
+            System.out.println("the contestant is too heavy");
+        }
+    } else {
+        System.out.println("the contestant is too light");
+    }
+}
+}
+
+6. import java.util.Scanner;
+class GroundBeefValueCalculator {
+    public static void main(String[] args) {
+    Scanner scan = new Scanner(System.in);
+    
+    double pacA, pacB, perA, perB, CPPA, CPPB;
+    
+    System.out.println("Price per pound package A:");
+        pacA = scan.nextDouble();
+    System.out.println("Percent lean package A:");
+        perA = scan.nextInt();
+    System.out.println("Price per pound package B:");
+        pacB = scan.nextDouble();
+    System.out.println("Percent lean package B:");
+        perB = scan.nextInt();
+    perA = perA / 100; 
+    perB = perB / 100;
+    CPPA = (pacA / perA);
+    CPPB = (pacB / perB);
+    
+    System.out.format("Package A cost per pound of lean: %s \n", CPPA);
+    System.out.format("Package B cost per pound of lean: %s \n", CPPB);
+    if (CPPA < CPPB) {
+        System.out.println("Package A is the best value");
+    } else {
+        System.out.println("Package B is the best value");
+    }
+    }
+}
