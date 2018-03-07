@@ -59,4 +59,145 @@ class Deli {
     } 
 }
 
-10.
+10. import java.util.Scanner;
+
+class Microwave {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        
+        int item;
+        double heatTime;
+        
+        System.out.println("How many items?");
+        item = scan.nextInt();
+        
+        System.out.println("What is the single-item heating time?");
+        heatTime = scan.nextInt();
+        
+        if (item == 1){
+            System.out.println("Heat for: " + heatTime);
+        }
+        
+        if (item == 2){
+            System.out.println("Heat for: " + (heatTime * 1.5));
+        }
+        
+        if (item == 3){
+            System.out.println("Heat for: " + (heatTime * 2));
+        }
+        
+        if (item > 3 || item <1){
+            System.out.println("thats the wrong number of items you can only have 1 to 3");
+        }
+    }
+}
+
+11. import java.util.Scanner;
+
+class FantasyGame {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        
+        String name;
+        int strength, health, luck;
+        
+        System.out.println("welcome to the quest");
+        System.out.println("Enter the name of your charicter");
+        name = scan.nextLine();
+        
+        System.out.println("Enter Strength (1-10):");
+        strength = scan.nextInt();
+        
+        System.out.println("Enter health (1-10):");
+        health = scan.nextInt();
+        
+        System.out.println("Enter luck (1-10):");
+        luck = scan.nextInt();
+        
+        if (strength + health + luck > 15){
+            System.out.println("You have give your character too many points!  Default values have been assigned:");
+            strength = 5;
+            health = 5;
+            luck = 5;
+        }
+        System.out.format(name + ", strength: " + strength + ", health: " + health + ", luck: " + luck);
+    }
+}
+
+12. import java.util.Scanner;
+
+class CheckChecker {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        
+        double chekAccount, savAccount;
+        
+        System.out.println("Checking account balance:");
+        chekAccount = scan.nextDouble();
+        
+        System.out.println("Savings account balance:");
+        savAccount = scan.nextDouble();
+        
+        if (chekAccount > 1000 || savAccount > 1500){
+            System.out.println("Checks are free");
+        } else {
+            System.out.println("The cost is $0.15 per check");
+        }
+    }
+}
+
+13. import java.util.Scanner;
+
+    class tirePressure1 {
+    	public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        
+        double RF, LF, RR, LR;
+        
+        System.out.println("What is the right front tire presure?");
+        RF = scan.nextDouble();
+         
+         System.out.println("What is the left front tire pressure?");
+        LF = scan.nextDouble();
+         
+         System.out.println("What is the right rear tire pressure?");
+        RR = scan.nextDouble();
+         
+         System.out.println("What is the left rear tire pressure?");
+        LR = scan.nextDouble();
+        
+        if (RF == LF && RR == LR){
+            System.out.println("Inflation is OK");
+        } else {
+            System.out.println("Inflation is BAD");
+        }
+    }
+}
+
+14. import java.util.Scanner;
+
+class tirePressure2 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        
+        double RF, LF, RR, LR;
+        
+        System.out.println("What is the right front tire presure?");
+        RF = scan.nextDouble();
+         
+         System.out.println("What is the left front tire pressure?");
+        LF = scan.nextDouble();
+         
+         System.out.println("What is the right rear tire pressure?");
+        RR = scan.nextDouble();
+         
+         System.out.println("What is the left rear tire pressure?");
+        LR = scan.nextDouble();
+        
+        if ((RF == LF && RR == LR) && (RF < 45) && (RR < 45) && (RF > 35) && (RR >35)){
+            System.out.println("Inflation is OK");
+        } else {
+            System.out.println("Inflation is BAD");
+        }
+    }
+}
